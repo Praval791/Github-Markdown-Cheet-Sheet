@@ -18,6 +18,7 @@ This cheatsheet is specifically intended as a quick reference and showcase of Gi
 [TeX Mathematical Formulae](#tex)  
 [Creating diagrams](https://docs.github.com/en/get-started/writing-on-github/working-with-advanced-formatting/creating-diagrams)  
 [Footnotes](#footnotes)  
+[Comments](#comments)
 
 <a name="headers"/>
 
@@ -461,6 +462,7 @@ A footnote can also have multiple lines[^2].
 
 You can also use words, to fit your writing style more closely[^note].
 
+Unlike link references, which are not displayed anywhere in the file and simply vanish from the user's view, these references are displayed at the end of a markdown document.
 [^1]: My reference.
 [^2]: Every new line should be prefixed with 2 spaces.  
   This allows you to have a footnote with multiple lines.
@@ -482,3 +484,13 @@ You can also use words, to fit your writing style more closely[^note].
 [^note]:
     Named footnotes will still render with numbers instead of the text but allow easier identification and linking.  
     This footnote also has been made with a different syntax using 4 spaces for new lines.
+
+
+## Comments
+You can tell GitHub Enterprise Cloud to hide content from the rendered Markdown by placing the content in an HTML comment.
+```
+I've written a comment here, but you can only read it if you turn off markdown rendering.
+<!-- This content will not appear in the rendered Markdown -->
+```
+I've written a comment here, but you can only read it if you turn off markdown rendering.
+<!-- This content will not appear in the rendered Markdown -->
